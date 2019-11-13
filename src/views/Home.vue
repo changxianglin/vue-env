@@ -13,6 +13,12 @@ export default {
   name: 'home',
   components: {
     HelloWorld
+  },
+  created() {
+    console.log(process.env.TEST_ENV, 'created')
+  },
+  mounted() {
+    console.log(process.env.TEST_ENV, 'mounted')
   }
 }
 </script>
